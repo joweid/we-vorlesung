@@ -1,0 +1,175 @@
+CRITICAL - 2023-01-24 09:36:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\aufgaben.php on line 47.
+ 1 APPPATH\Views\aufgaben.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\aufgaben.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(20): view('aufgaben', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 09:39:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\aufgaben.php on line 62.
+ 1 APPPATH\Views\aufgaben.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\aufgaben.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(20): view('aufgaben', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 10:03:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM mitglied_projekt WHERE mitglied_id =1and projekt_id=1' at line 1 in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT FROM mit...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT FROM mit...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT FROM mit...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\MitgliederModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT FROM mit...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Views\mitglieder.php(43): App\Models\MitgliederModel->in_projekt('1', '1')
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\Common.php(1135): CodeIgniter\View\View->render('mitglieder', Array, true)
+#8 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Mitglieder.php(13): view('mitglieder', Array)
+#9 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+#10 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#11 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-24 10:03:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM mitglied_projekt WHERE mitglied_id =1and projekt_id=1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT FROM mitglied_projekt WHERE mitglied_id =1and projekt_id=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT FROM mitglied_projekt WHERE mitglied_id =1and projekt_id=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT FROM mitglied_projekt WHERE mitglied_id =1and projekt_id=1')
+ 4 APPPATH\Models\MitgliederModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT FROM mitglied_projekt WHERE mitglied_id =1and projekt_id=1')
+ 5 APPPATH\Views\mitglieder.php(43): App\Models\MitgliederModel->in_projekt('1', '1')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mitglieder.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 9 APPPATH\Controllers\Mitglieder.php(13): view('mitglieder', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 10:19:54 --> mysqli_sql_exception: Unknown column 'reiter_projekt' in 'where clause' in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\ReiterModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Todos.php(11): App\Models\ReiterModel->get_assigned_data()
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Todos->index()
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-24 10:19:54 --> Unknown column 'reiter_projekt' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5')
+ 4 APPPATH\Models\ReiterModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5')
+ 5 APPPATH\Controllers\Todos.php(11): App\Models\ReiterModel->get_assigned_data()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Todos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 10:20:08 --> mysqli_sql_exception: Unknown column 'reiter_projekt' in 'where clause' in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\ReiterModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Todos.php(11): App\Models\ReiterModel->get_assigned_data()
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Todos->index()
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-24 10:20:08 --> Unknown column 'reiter_projekt' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5')
+ 4 APPPATH\Models\ReiterModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM reiter, reiter_projekt WHERE reiter.id=reiter_projekt.reiter_id and reiter_projekt=5')
+ 5 APPPATH\Controllers\Todos.php(11): App\Models\ReiterModel->get_assigned_data()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Todos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 10:20:56 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\todos.php on line 58.
+ 1 APPPATH\Views\todos.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\todos.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\todos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('todos', [], true)
+ 5 APPPATH\Controllers\Todos.php(12): view('todos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Todos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 10:23:51 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\reiter.php on line 38.
+ 1 APPPATH\Views\reiter.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\reiter.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\reiter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('reiter', [], true)
+ 5 APPPATH\Controllers\Reiter.php(12): view('reiter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 10:32:22 --> Undefined variable $projekt_id
+in APPPATH\Views\projekte.php on line 51.
+ 1 APPPATH\Views\projekte.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projekt_id', 'APPPATH\\Views\\projekte.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\projekte.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('projekte', [], true)
+ 5 APPPATH\Controllers\Projekte.php(12): view('projekte', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 10:40:22 --> mysqli_sql_exception: Unknown column 'aufgabe.id' in 'where clause' in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\AufgabenModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Aufgaben.php(16): App\Models\AufgabenModel->get_assigned_data()
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-24 10:40:22 --> Unknown column 'aufgabe.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM aufgaben, aufgaben_projekt WHERE aufgabe.id=aufgaben_projekt.aufgaben_id and aufgaben_projekt.projekt_id=6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM aufgaben, aufgaben_projekt WHERE aufgabe.id=aufgaben_projekt.aufgaben_id and aufgaben_projekt.projekt_id=6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM aufgaben, aufgaben_projekt WHERE aufgabe.id=aufgaben_projekt.aufgaben_id and aufgaben_projekt.projekt_id=6')
+ 4 APPPATH\Models\AufgabenModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM aufgaben, aufgaben_projekt WHERE aufgabe.id=aufgaben_projekt.aufgaben_id and aufgaben_projekt.projekt_id=6')
+ 5 APPPATH\Controllers\Aufgaben.php(16): App\Models\AufgabenModel->get_assigned_data()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 14:10:50 --> Array to string conversion
+in APPPATH\Views\templates\sidebar.php on line 5.
+ 1 APPPATH\Views\templates\sidebar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\templates\\sidebar.php', 5)
+ 2 APPPATH\Views\todos.php(53): include('APPPATH\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\todos.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('todos', [], true)
+ 6 APPPATH\Controllers\Todos.php(12): view('todos', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Todos->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 14:27:31 --> Undefined variable $in_projekt
+in APPPATH\Models\MitgliederModel.php on line 94.
+ 1 APPPATH\Models\MitgliederModel.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $in_projekt', 'APPPATH\\Models\\MitgliederModel.php', 94)
+ 2 APPPATH\Controllers\Mitglieder.php(43): App\Models\MitgliederModel->update_user('1')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update_user()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

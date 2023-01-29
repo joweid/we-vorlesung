@@ -1,0 +1,22 @@
+CRITICAL - 2023-01-07 17:46:09 --> Undefined array key ""
+in APPPATH\Views\aufgaben.php on line 62.
+ 1 APPPATH\Views\aufgaben.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Views\\aufgaben.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('aufgaben', [], true)
+ 5 APPPATH\Controllers\aufgaben.php(9): view('aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-07 17:55:53 --> Undefined array key "name"
+in APPPATH\Views\aufgaben.php on line 62.
+ 1 APPPATH\Views\aufgaben.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\aufgaben.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('aufgaben', [], true)
+ 5 APPPATH\Controllers\aufgaben.php(9): view('aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

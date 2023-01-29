@@ -1,0 +1,357 @@
+CRITICAL - 2022-12-26 06:52:08 --> Array to string conversion
+in APPPATH\Controllers\Mitglieder.php on line 13.
+ 1 APPPATH\Controllers\Mitglieder.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Mitglieder.php', 13, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:52:34 --> Undefined property: App\Controllers\Mitglieder::$persons
+in APPPATH\Controllers\Mitglieder.php on line 13.
+ 1 APPPATH\Controllers\Mitglieder.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Mitglieder::$persons', 'APPPATH\\Controllers\\Mitglieder.php', 13, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:52:42 --> Array to string conversion
+in APPPATH\Controllers\Mitglieder.php on line 13.
+ 1 APPPATH\Controllers\Mitglieder.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Mitglieder.php', 13, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:54:24 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:54:25 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:55:54 --> Call to a member function getName() on array
+in APPPATH\Controllers\Mitglieder.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:56:04 --> Undefined offset: 1
+in APPPATH\Controllers\Mitglieder.php on line 13.
+ 1 APPPATH\Controllers\Mitglieder.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\Mitglieder.php', 13, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:56:10 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(15): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:56:32 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:56:52 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:56:53 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:57:02 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-26 06:57:22 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:57:58 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(15): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:59:12 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(17): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:00:15 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(17): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:01:06 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(17): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:02:21 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(14): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:04:03 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH\Controllers\Mitglieder.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Mitglieder.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\mitglieder')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\mitglieder')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\mitglieder')
+ 5 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\mitglieder', true)
+ 6 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:04:22 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH\Controllers\Mitglieder.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Mitglieder.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\mitglieder')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\mitglieder')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\mitglieder')
+ 5 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\mitglieder', true)
+ 6 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:04:36 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:05:28 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:05:42 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:05:53 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:06:18 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:07:02 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:07:58 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:08:22 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:10:33 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:12:06 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:12:06 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:12:29 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:12:30 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:13:02 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:13:55 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:13:56 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:14:03 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:14:48 --> Cannot use object of type App\Models\person as array
+in APPPATH\Views\mitglieder.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(33): view('mitglieder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

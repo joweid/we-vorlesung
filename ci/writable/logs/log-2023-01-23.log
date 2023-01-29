@@ -1,0 +1,22 @@
+CRITICAL - 2023-01-23 08:13:12 --> Undefined array key "username"
+in APPPATH\Views\todos.php on line 39.
+ 1 APPPATH\Views\todos.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Views\\todos.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\todos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('todos', [], true)
+ 5 APPPATH\Controllers\Todos.php(12): view('todos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Todos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-23 09:05:55 --> Undefined variable $projekt
+in APPPATH\Views\todos.php on line 65.
+ 1 APPPATH\Views\todos.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projekt', 'APPPATH\\Views\\todos.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\todos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('todos', [], true)
+ 5 APPPATH\Controllers\Todos.php(12): view('todos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Todos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

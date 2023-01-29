@@ -1,0 +1,125 @@
+ERROR - 2023-01-29 05:29:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN aufgaben_projekt ON aufgaben.id = aufgaben_projekt.aufgaben_id WHERE auf...' at line 1 in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM auf...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM auf...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM auf...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\ProjektModel.php(34): CodeIgniter\Database\BaseConnection->query('DELETE FROM auf...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Projekte.php(35): App\Models\ProjektModel->delete_projekt_by_id('11')
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Projekte->edit_projekt()
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-29 05:29:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN aufgaben_projekt ON aufgaben.id = aufgaben_projekt.aufgaben_id WHERE auf...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM aufgaben JOIN aufgaben_projekt ON aufgaben.id = aufgaben_projekt.aufgaben_id WHERE aufgaben_projekt.projekt_id =11', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM aufgaben JOIN aufgaben_projekt ON aufgaben.id = aufgaben_projekt.aufgaben_id WHERE aufgaben_projekt.projekt_id =11')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM aufgaben JOIN aufgaben_projekt ON aufgaben.id = aufgaben_projekt.aufgaben_id WHERE aufgaben_projekt.projekt_id =11')
+ 4 APPPATH\Models\ProjektModel.php(34): CodeIgniter\Database\BaseConnection->query('DELETE FROM aufgaben JOIN aufgaben_projekt ON aufgaben.id = aufgaben_projekt.aufgaben_id WHERE aufgaben_projekt.projekt_id =11')
+ 5 APPPATH\Controllers\Projekte.php(35): App\Models\ProjektModel->delete_projekt_by_id('11')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->edit_projekt()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-29 05:38:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')12' at line 5 in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM auf...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM auf...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM auf...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\ProjektModel.php(38): CodeIgniter\Database\BaseConnection->query('DELETE FROM auf...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Projekte.php(35): App\Models\ProjektModel->delete_projekt_by_id('12')
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Projekte->edit_projekt()
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-29 05:38:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')12' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM aufgaben
+        WHERE EXISTS (SELECT *
+                      FROM aufgaben_projekt
+                      WHERE aufgaben.id = aufgaben_projekt.aufgaben_id
+                        AND aufgaben_projekt.projekt_id = )12', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM aufgaben
+        WHERE EXISTS (SELECT *
+                      FROM aufgaben_projekt
+                      WHERE aufgaben.id = aufgaben_projekt.aufgaben_id
+                        AND aufgaben_projekt.projekt_id = )12')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM aufgaben
+        WHERE EXISTS (SELECT *
+                      FROM aufgaben_projekt
+                      WHERE aufgaben.id = aufgaben_projekt.aufgaben_id
+                        AND aufgaben_projekt.projekt_id = )12')
+ 4 APPPATH\Models\ProjektModel.php(38): CodeIgniter\Database\BaseConnection->query('DELETE FROM aufgaben
+        WHERE EXISTS (SELECT *
+                      FROM aufgaben_projekt
+                      WHERE aufgaben.id = aufgaben_projekt.aufgaben_id
+                        AND aufgaben_projekt.projekt_id = )12')
+ 5 APPPATH\Controllers\Projekte.php(35): App\Models\ProjektModel->delete_projekt_by_id('12')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->edit_projekt()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-29 05:56:42 --> mysqli_sql_exception: Unknown column 'mitglied.id' in 'where clause' in C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\we-vorlesung\ci\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM mit...', 0)
+#1 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM mit...')
+#2 C:\xampp\htdocs\we-vorlesung\ci\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM mit...')
+#3 C:\xampp\htdocs\we-vorlesung\ci\app\Models\ProjektModel.php(46): CodeIgniter\Database\BaseConnection->query('DELETE FROM mit...')
+#4 C:\xampp\htdocs\we-vorlesung\ci\app\Controllers\Projekte.php(35): App\Models\ProjektModel->delete_projekt_by_id('13')
+#5 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(925): App\Controllers\Projekte->edit_projekt()
+#6 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+#7 C:\xampp\htdocs\we-vorlesung\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\we-vorlesung\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-29 05:56:42 --> Unknown column 'mitglied.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM mitglieder
+        WHERE EXISTS (SELECT *
+                      FROM mitglied_projekt
+                      WHERE mitglied.id = mitglied_projekt.mitglied_id
+                        AND mitglied_projekt.projekt_id = 13)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM mitglieder
+        WHERE EXISTS (SELECT *
+                      FROM mitglied_projekt
+                      WHERE mitglied.id = mitglied_projekt.mitglied_id
+                        AND mitglied_projekt.projekt_id = 13)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM mitglieder
+        WHERE EXISTS (SELECT *
+                      FROM mitglied_projekt
+                      WHERE mitglied.id = mitglied_projekt.mitglied_id
+                        AND mitglied_projekt.projekt_id = 13)')
+ 4 APPPATH\Models\ProjektModel.php(46): CodeIgniter\Database\BaseConnection->query('DELETE FROM mitglieder
+        WHERE EXISTS (SELECT *
+                      FROM mitglied_projekt
+                      WHERE mitglied.id = mitglied_projekt.mitglied_id
+                        AND mitglied_projekt.projekt_id = 13)')
+ 5 APPPATH\Controllers\Projekte.php(35): App\Models\ProjektModel->delete_projekt_by_id('13')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->edit_projekt()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-29 05:57:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\templates\navbar.php on line 12.
+ 1 APPPATH\Views\templates\navbar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\templates\\navbar.php', 12)
+ 2 APPPATH\Views\projekte.php(39): include('APPPATH\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\projekte.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('projekte', [], true)
+ 6 APPPATH\Controllers\Projekte.php(15): view('projekte', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-29 05:57:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\templates\navbar.php on line 12.
+ 1 APPPATH\Views\templates\navbar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\templates\\navbar.php', 12)
+ 2 APPPATH\Views\projekte.php(39): include('APPPATH\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\projekte.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('projekte', [], true)
+ 6 APPPATH\Controllers\Projekte.php(15): view('projekte', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

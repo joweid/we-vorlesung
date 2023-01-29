@@ -1,0 +1,61 @@
+CRITICAL - 2023-01-27 11:06:16 --> Undefined variable $mitglieder_model
+in APPPATH\Views\mitglieder.php on line 41.
+ 1 APPPATH\Views\mitglieder.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mitglieder_model', 'APPPATH\\Views\\mitglieder.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(16): view('mitglieder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 11:06:47 --> Undefined variable $item_id
+in APPPATH\Views\mitglieder.php on line 41.
+ 1 APPPATH\Views\mitglieder.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_id', 'APPPATH\\Views\\mitglieder.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(16): view('mitglieder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 11:11:03 --> Undefined variable $mitglieder_model
+in APPPATH\Views\edit_user.php on line 32.
+ 1 APPPATH\Views\edit_user.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mitglieder_model', 'APPPATH\\Views\\edit_user.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('edit_user', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(36): view('edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->edit_user()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 11:12:26 --> Undefined variable $item
+in APPPATH\Views\edit_user.php on line 36.
+ 1 APPPATH\Views\edit_user.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\edit_user.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_user.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('edit_user', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(36): view('edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->edit_user()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 11:32:54 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Models\MitgliederModel.php on line 98.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MitgliederModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MitgliederModel')
+ 3 APPPATH\Controllers\Mitglieder.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MitgliederModel')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 11:33:14 --> Attempt to read property "count" on null
+in APPPATH\Models\MitgliederModel.php on line 89.
+ 1 APPPATH\Models\MitgliederModel.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "count" on null', 'APPPATH\\Models\\MitgliederModel.php', 89)
+ 2 APPPATH\Controllers\Mitglieder.php(46): App\Models\MitgliederModel->update_user('1')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update_user()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

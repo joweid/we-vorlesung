@@ -1,0 +1,46 @@
+CRITICAL - 2023-01-25 07:28:57 --> Undefined variable $name
+in APPPATH\Views\templates\sidebar.php on line 3.
+ 1 APPPATH\Views\templates\sidebar.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Views\\templates\\sidebar.php', 3)
+ 2 APPPATH\Views\projekte.php(28): include('APPPATH\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\projekte.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('projekte', [], true)
+ 6 APPPATH\Controllers\Projekte.php(12): view('projekte', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 08:15:14 --> Undefined array key "chosen_projekt"
+in APPPATH\Views\projekte.php on line 54.
+ 1 APPPATH\Views\projekte.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "chosen_projekt"', 'APPPATH\\Views\\projekte.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\projekte.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('projekte', [], true)
+ 5 APPPATH\Controllers\Projekte.php(12): view('projekte', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 12:22:16 --> Call to undefined method App\Controllers\Login::session_unset()
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 12:30:47 --> Call to undefined method App\Controllers\Mitglieder::is_logged_in()
+in APPPATH\Controllers\Mitglieder.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 12:31:02 --> Undefined array key "chosen_projekt"
+in APPPATH\Views\mitglieder.php on line 44.
+ 1 APPPATH\Views\mitglieder.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "chosen_projekt"', 'APPPATH\\Views\\mitglieder.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(13): view('mitglieder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
