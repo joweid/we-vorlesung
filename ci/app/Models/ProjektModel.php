@@ -52,8 +52,8 @@ class ProjektModel extends Model {
                       WHERE reiter.id = reiter_projekt.reiter_id
                         AND reiter_projekt.projekt_id = ". $projekt_id. ")";
         $q = $this->db->query($q);
-        $q = "DELETE FROM reiter_projekt WHERE projekt_id =".$projekt_id;
-        $q = $this->db->query($q);
+        $qu = "DELETE FROM reiter_projekt WHERE projekt_id =".$projekt_id;
+        $qu = $this->db->query($qu);
         unset($_SESSION['chosen_projekt']);
     }
 
